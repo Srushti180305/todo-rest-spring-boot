@@ -12,7 +12,7 @@ public class TodoRestApplication {
         SpringApplication.run(TodoRestApplication.class, args);
 
         // Force open in external browser
-        String url = "http://localhost:8055";
+        String url = "http://localhost:8082";
         try {
             if (System.getProperty("os.name").toLowerCase().contains("win")) {
                 Runtime.getRuntime().exec(new String[]{"cmd", "/c", "start", url});

@@ -49,7 +49,7 @@ public class UserServiceImpl implements UserService {
 		if(!sessionRepository.existsBySessionId(session.getId())) {
 		Optional<User> user = userRepository.findByUsername(request.getUsername());
 		if (user.isPresent()) {
-			if (request.getPassword().equals(AES.decrypt(user.get().getPassword()))) {
+			if (user.get().checkPassword(request.getPassword())) {
 				
 				Session userSession = new Session();
 				userSession.setSessionId(session.getId());

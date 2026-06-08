@@ -17,7 +17,7 @@ A full stack Todo application built with Spring Boot and MySQL.
 ## How to Run
 1. Make sure MySQL is running on port 3306
 2. Run `mvnw.cmd spring-boot:run`
-3. API runs on `http://localhost:8055`
+3. API runs on `http://localhost:8082`
 
 ## API Endpoints
 | Method | URL | Description |
